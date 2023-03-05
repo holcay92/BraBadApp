@@ -21,6 +21,7 @@ class SayMyName : AppCompatActivity() {
             startActivity(intent)
             mediaPlayer?.stop()
         }
+
         mediaPlayer = MediaPlayer.create(this, R.raw.say)
         playButton.setOnClickListener{
             mediaPlayer?.start()
